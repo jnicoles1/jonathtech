@@ -28,17 +28,20 @@ export const Header = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
+        {/* LOGO SECTION REPLACED BELOW */}
         <motion.a
           href="#home"
-          className="flex items-center"
+          className="flex items-center gap-2"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <span className="font-display text-2xl font-bold">
-            <span className="text-foreground">Jonath</span>
-            <span className="text-primary">Tech</span>
-          </span>
+          {/* Replace '/logo.png' with the actual path to your uploaded image */}
+          <img 
+            src="/logo.png" 
+            alt="Jonath Tech Logo" 
+            className="h-10 w-auto object-contain"
+          />
         </motion.a>
 
         {/* Desktop Navigation */}
